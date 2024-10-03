@@ -33,8 +33,8 @@ return new class extends Migration {
                 ->unsigned()
                 ->default();
             $table
-                ->enum('status', ['waiting', 'approved', 'cancelled'])
-                ->default('[waiting]');
+                ->enum('status', ['waiting', 'approved', 'canceled'])
+                ->default('waiting');
             $table->timestamps();
         });
     }
